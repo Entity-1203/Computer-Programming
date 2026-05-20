@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Inventory Management System</h1>
+      <p>IT 104L Final Laboratory Project</p>
+    </header>
+
+    <!-- FORM -->
+    <section class="form-section">
+
+      <h2>Add / Update Product</h2>
+
+      <form id="productForm">
+
+        <div class="form-group">
+          <label>Product ID</label>
+          <input type="text" id="productId" placeholder="Enter Product ID">
+        </div>
+
+        <div class="form-group">
+          <label>Product Name</label>
+          <input type="text" id="productName" placeholder="Enter Product Name">
+        </div>
+
+        <div class="form-group">
+          <label>Category</label>
+          <input type="text" id="category" placeholder="Enter Category">
+        </div>
+
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" id="quantity" placeholder="Enter Quantity">
+        </div>
+
+        <div class="form-group">
+          <label>Price</label>
+          <input type="number" id="price" placeholder="Enter Price">
+        </div>
+
+        <button type="submit" id="submitBtn">
+          Add Product
+        </button>
+
+      </form>
+
+      <div id="errorMessage" class="error-message"></div>
+
+    </section>
+
+    <!-- SEARCH & SORT -->
+    <section class="toolbar">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Product"
+      >
+
+      <select id="sortSelect">
+        <option value="">Sort Products</option>
+        <option value="name">Sort by Name</option>
+        <option value="quantity">Sort by Quantity</option>
+        <option value="price">Sort by Price</option>
+      </select>
+
+    </section>
+
+    <!-- TABLE -->
+    <section class="table-section">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="productTableBody"></tbody>
+
+      </table>
+
+    </section>
+
+  </div>
+
+    <script src="script.js"></script>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Inventory Management System |
+      IT 104L Final Laboratory Project
+    </p>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #f1f5f9;
+  padding: 20px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  flex: 1;
+}
+
+header{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1{
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+header p{
+  color: gray;
+}
+
+.form-section{
+  margin-bottom: 25px;
+}
+
+.form-section h2{
+  margin-bottom: 15px;
+}
+
+#productForm{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 15px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button{
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submitBtn{
+  background: #2563eb;
+  color: white;
+}
+
+#submitBtn:hover{
+  background: #1d4ed8;
+}
+
+.toolbar{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.toolbar input,
+.toolbar select{
+  flex: 1;
+}
+
+.table-section{
+  overflow-x: auto;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead{
+  background: #2563eb;
+  color: white;
+}
+
+table th,
+table td{
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.edit-btn{
+  background: orange;
+  color: white;
+  margin-right: 5px;
+}
+
+.delete-btn{
+  background: crimson;
+  color: white;
+}
+
+.edit-btn:hover{
+  background: darkorange;
+}
+
+.delete-btn:hover{
+  background: darkred;
+}
+
+.error-message{
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.no-data{
+  color: gray;
+}
+
+@media(max-width:768px){
+
+  .toolbar{
+    flex-direction: column;
+  }
+
+}
+
+footer{
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  color: white;
+  border-radius: 10px;
+}
+
+footer p{
+  margin: 5px 0;
+  font-size: 14px;
+}

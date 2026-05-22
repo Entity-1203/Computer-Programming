@@ -171,3 +171,56 @@ footer p{
   margin: 5px 0;
   font-size: 14px;
 }
+
+/*  */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.modal-overlay.active {
+  display: flex;
+}
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+}
+.modal-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.modal-yes {
+  background: crimson;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.modal-yes:hover { background: darkred; }
+.modal-no {
+  background: #e2e8f0;
+  color: #1e293b;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.modal-no:hover { background: #cbd5e1; }
